@@ -1,6 +1,7 @@
 package com.tms;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -10,6 +11,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+@WebServlet (value = "/car")
 public class CarServlet extends HttpServlet {
     public static Map<Integer, Car> carMap = new HashMap();
     private static Integer carId = 0;
