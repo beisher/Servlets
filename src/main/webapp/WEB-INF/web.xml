@@ -4,23 +4,10 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  
-  <servlet>
-    <servlet-name>hello</servlet-name>
-    <servlet-class>com.tms.HomeServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>car</servlet-name>
-    <servlet-class>com.tms.CarServlet</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-    <servlet-name>hello</servlet-name>
-    <url-pattern>/hi</url-pattern>
-  </servlet-mapping>
 
-  <servlet-mapping>
-    <servlet-name>car</servlet-name>
-    <url-pattern>/car</url-pattern>
-  </servlet-mapping>
+  <error-page>
+    <error-code>403</error-code>
+    <location>/error.html</location>
+  </error-page>
 </web-app>
+
